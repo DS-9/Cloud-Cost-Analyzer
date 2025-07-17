@@ -6,13 +6,11 @@ import { UserRole } from '../../types';
 interface RoleSelectorProps {
   currentRole: UserRole;
   activeSection: string;
-  onSectionChange: (section: string) => void;
 }
 
 export const RoleSelector: React.FC<RoleSelectorProps> = ({
   currentRole,
-  activeSection,
-  onSectionChange
+  activeSection
 }) => {
   // Role-specific help text
   const getHelpText = () => {
